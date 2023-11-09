@@ -9,7 +9,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6313ee2-8a96-47eb-b699-e696f6f1ffea" name="Changes" comment="" />
+    <list default="true" id="c6313ee2-8a96-47eb-b699-e696f6f1ffea" name="Changes" comment="git ignore commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,9 +56,15 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
-    "cidr.known.project.marker": "true"
+    "cidr.known.project.marker": "true",
+    "last_opened_file_path": "/Users/duckky/Documents/project/everfit/android/ScannerApp"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="EverfitScannerApp.app.main" />
@@ -128,6 +134,14 @@
       <option name="presentableId" value="Default" />
       <updated>1699518588407</updated>
     </task>
+    <task id="LOCAL-00001" summary="git ignore commit">
+      <created>1699518724083</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1699518724083</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -143,6 +157,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="git config scan app food" />
-    <option name="LAST_COMMIT_MESSAGE" value="git config scan app food" />
+    <MESSAGE value="git ignore commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="git ignore commit" />
   </component>
 </project>
