@@ -11,7 +11,9 @@ import com.example.everfitscannerapp.domain.usecase.GetScanDetailInfoUseCase
 import com.example.everfitscannerapp.domain.usecase.GetServiceUseCase
 import com.google.mlkit.vision.barcode.common.Barcode
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.Deferred
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.async
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
@@ -23,7 +25,7 @@ class MainViewModel @Inject constructor(
 
     var callingAPI: Boolean by mutableStateOf(false)
 
-    var scannedInfoJson : String by mutableStateOf("")
+    var scannedInfoJson : HashMap<String, String> by mutableStateOf(hashMapOf())
         private set
 
     var scannedInfo : ScannedData by mutableStateOf(ScannedData())
@@ -52,14 +54,25 @@ class MainViewModel @Inject constructor(
         }
     }
 
-    fun getDataInfoJson(barcode: Barcode) {
+    fun searchDataInfoJson(barcodeStr: String) {
         callingAPI = true
-        scannedInfoJson = ""
-        scanServices.firstOrNull { s -> s.isSelected }?.let { scanService ->
-            viewModelScope.launch(Dispatchers.IO) {
-                scannedInfoJson = getScanDetailInfoUseCase.getScanDetailJs(scanService.id, scanCode = barcode.rawValue?:"")
-                callingAPI = false
+        scannedInfoJson = hashMapOf()
+        val deferreds = hashMapOf<ScanService, Deferred<String>>()
+        viewModelScope.launch(Dispatchers.IO) {
+            scanServices.forEach { scanService ->
+                deferreds[scanService] = async {
+                    getScanDetailInfoUseCase.getScanDetailJs(
+                        scanService.id,
+                        scanCode = barcodeStr
+                    )
+                }
             }
+            val scannedData = hashMapOf<String, String>()
+            deferreds.forEach { data ->
+                scannedData[data.key.name] = data.value.await()
+            }
+            scannedInfoJson = scannedData
+            callingAPI = false
         }
     }
 
