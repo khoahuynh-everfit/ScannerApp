@@ -7,6 +7,7 @@ import com.example.everfitscannerapp.domain.model.ScannedData
 import com.example.everfitscannerapp.domain.model.ScannedNutrition
 import com.example.everfitscannerapp.domain.repository.ScanRepository
 import com.google.gson.GsonBuilder
+import com.google.gson.JsonObject
 import java.lang.Exception
 
 class ScanRepositoryImpl(private val scanServiceAPI: ScanServiceAPI) : ScanRepository {
@@ -16,7 +17,8 @@ class ScanRepositoryImpl(private val scanServiceAPI: ScanServiceAPI) : ScanRepos
             scanServiceAPI.getService().data.list.map { serviceDetail ->
                 ScanService(
                     id = serviceDetail.id,
-                    name = serviceDetail.name
+                    name = serviceDetail.name,
+                    services = serviceDetail.services
                 )
             }
         } catch (e: Exception) {
@@ -61,18 +63,31 @@ class ScanRepositoryImpl(private val scanServiceAPI: ScanServiceAPI) : ScanRepos
         }
     }
 
-    override suspend fun getScanDetailJson(serviceId: String, scanCode: String): String {
+    override suspend fun getScanDetailJson(serviceId: String, scanCode: String): JsonObject? {
         return try {
-            val json = scanServiceAPI.getDetailJson(
+            scanServiceAPI.getDetailJson(
                 ScanRequest(
                     id = serviceId,
                     code = scanCode
                 )
-            )
-            GsonBuilder().setPrettyPrinting().create().toJson(json)
+            ).data
         } catch (e: Exception) {
             e.printStackTrace()
-            "${e.message}"
+            null
+        }
+    }
+
+    override suspend fun searchDetailJson(serviceId: String, input: String): List<JsonObject> {
+        return try {
+            scanServiceAPI.searchDetailJson(
+                id = serviceId,
+                query = input
+            ).data
+        } catch (e: Exception) {
+            e.printStackTrace()
+            listOf(
+                JsonObject().apply { addProperty("error", e.message) }
+            )
         }
     }
 }

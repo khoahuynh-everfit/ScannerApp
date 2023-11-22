@@ -2,6 +2,7 @@ package com.example.everfitscannerapp.domain.usecase
 
 import com.example.everfitscannerapp.domain.model.ScannedData
 import com.example.everfitscannerapp.domain.repository.ScanRepository
+import com.google.gson.JsonObject
 import javax.inject.Inject
 
 class GetScanDetailInfoUseCase @Inject constructor(private val scanRepository: ScanRepository) {
@@ -13,7 +14,7 @@ class GetScanDetailInfoUseCase @Inject constructor(private val scanRepository: S
         )
     }
 
-    suspend fun getScanDetailJs(serviceId: String, scanCode: String) : String {
+    suspend fun getScanDetailJs(serviceId: String, scanCode: String) : JsonObject? {
         return scanRepository.getScanDetailJson(
             serviceId = serviceId,
             scanCode = scanCode

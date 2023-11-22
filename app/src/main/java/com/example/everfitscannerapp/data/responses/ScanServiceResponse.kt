@@ -16,4 +16,5 @@ data class ScanServiceListResponse(
 data class ScanServiceDetailResponse(
     @SerializedName("id") val id: String,
     @SerializedName("name") val name: String,
+    @SerializedName("services") val services: List<String>,
 )

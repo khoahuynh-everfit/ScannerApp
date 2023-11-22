@@ -9,7 +9,22 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6313ee2-8a96-47eb-b699-e696f6f1ffea" name="Changes" comment="git ignore commit" />
+    <list default="true" id="c6313ee2-8a96-47eb-b699-e696f6f1ffea" name="Changes" comment="git ignore commit">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/everfitscannerapp/ui/views/home/MainActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/everfitscannerapp/MainActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/everfitscannerapp/MainViewModel.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/everfitscannerapp/data/api/ScanServiceAPI.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/everfitscannerapp/data/api/ScanServiceAPI.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/everfitscannerapp/data/repository/ScanRepositoryImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/everfitscannerapp/data/repository/ScanRepositoryImpl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/everfitscannerapp/data/responses/ScanServiceResponse.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/everfitscannerapp/data/responses/ScanServiceResponse.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/everfitscannerapp/di/NetworkModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/everfitscannerapp/di/NetworkModule.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/everfitscannerapp/domain/model/ScanService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/everfitscannerapp/domain/model/ScanService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/everfitscannerapp/domain/repository/ScanRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/everfitscannerapp/domain/repository/ScanRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/everfitscannerapp/domain/usecase/GetScanDetailInfoUseCase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/everfitscannerapp/domain/usecase/GetScanDetailInfoUseCase.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,6 +53,14 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Enum" />
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -53,16 +76,46 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DEBUGGABLE_DEVICE": "Pixel_4_API_32_2 [emulator-5554]",
+    "DEBUGGABLE_PROCESS": "com.example.everfitscannerapp",
+    "DEBUGGER_ID": "Java",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
+    "SHOW_ALL_PROCESSES": "false",
     "cidr.known.project.marker": "true",
-    "last_opened_file_path": "/Users/duckky/Documents/project/everfit/android/ScannerApp"
+    "last_directory_selection": "/Users/duckky/Documents/project/everfit/android/ScannerApp/app/src/main/res/drawable",
+    "last_opened_file_path": "/Users/duckky/Documents/project/everfit/android/ScannerApp/app/src/main/java/com/example/everfitscannerapp/ui/views/detail"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/java/com/example/everfitscannerapp/ui/views/detail" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
+      <recent name="$PROJECT_DIR$/app/src/main/java/com/example/everfitscannerapp/ui/views/result" />
+      <recent name="$PROJECT_DIR$/app/src/main/java/com/example/everfitscannerapp/navigation" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/java/com/example/everfitscannerapp/navigation" />
+      <recent name="$PROJECT_DIR$/app/src/main/java/com/example/everfitscannerapp/ui/views/splash" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.example.everfitscannerapp.ui" />
+      <recent name="com.example.everfitscannerapp.ui.views.home" />
+    </key>
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="com.example.everfitscannerapp.data.responses" />
+      <recent name="com.example.everfitscannerapp.data.requests" />
+      <recent name="com.example.everfitscannerapp.domain.usecase" />
+      <recent name="com.example.everfitscannerapp.ui.views.result" />
+      <recent name="com.example.everfitscannerapp.ui.views.home" />
+    </key>
+    <key name="android.template.-222632364">
+      <recent name="com.example.everfitscannerapp.ui.views.detail" />
+      <recent name="com.example.everfitscannerapp.ui.views.result" />
+      <recent name="com.example.everfitscannerapp.ui.views.home" />
+      <recent name="com.example.everfitscannerapp.ui.views.splash" />
     </key>
   </component>
   <component name="RunManager">
@@ -141,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699518724083</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="git ignore commit">
+      <created>1699518815962</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1699518815962</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -159,5 +219,66 @@
     <MESSAGE value="git config scan app food" />
     <MESSAGE value="git ignore commit" />
     <option name="LAST_COMMIT_MESSAGE" value="git ignore commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/everfitscannerapp/ui/views/result/ResultActivity.kt</url>
+          <line>67</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/everfitscannerapp/ui/views/result/ResultViewModel.kt</url>
+          <line>36</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/everfitscannerapp/ui/views/result/ResultViewModel.kt</url>
+          <line>38</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/everfitscannerapp/ui/views/result/ResultActivity.kt</url>
+          <line>59</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/everfitscannerapp/ui/views/result/ResultActivity.kt</url>
+          <line>61</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/everfitscannerapp/ui/views/home/MainActivity.kt</url>
+          <line>46</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/everfitscannerapp/ui/views/result/ResultActivity.kt</url>
+          <line>56</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/everfitscannerapp/ui/views/result/ResultActivity.kt</url>
+          <line>60</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/everfitscannerapp/ui/views/result/ResultViewModel.kt</url>
+          <line>28</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/everfitscannerapp/ui/views/result/ResultViewModel.kt</url>
+          <line>29</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/everfitscannerapp/ui/views/result/ResultViewModel.kt</url>
+          <line>31</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

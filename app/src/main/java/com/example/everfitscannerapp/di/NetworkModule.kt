@@ -51,13 +51,9 @@ object NetworkModule {
             CONNECTION_TIMEOUT, TimeUnit.SECONDS
         )
         httpClientBuilder.hostnameVerifier { _, _ -> true }
-
-
         val logging = HttpLoggingInterceptor()
         httpClientBuilder.addInterceptor(logging)
         logging.level = HttpLoggingInterceptor.Level.BODY
-
-
         return httpClientBuilder.build()
     }
 
@@ -65,13 +61,17 @@ object NetworkModule {
     @Provides
     @OptIn(ExperimentalSerializationApi::class)
     fun provideRetrofit(
-        okHttpClient: OkHttpClient
     ): Retrofit {
         val gsonBuilder = GsonBuilder().setPrettyPrinting()
+        val okHttpClient = OkHttpClient.Builder()
+        val httpLoggingInterceptor = HttpLoggingInterceptor().setLevel(
+            HttpLoggingInterceptor.Level.BODY
+        )
+        okHttpClient.addInterceptor(httpLoggingInterceptor)
         return Retrofit.Builder()
             .baseUrl(BASE_URL)
             .addConverterFactory(GsonConverterFactory.create(gsonBuilder.create()))
-            .client(okHttpClient)
+            .client(okHttpClient.build())
             .build()
     }
 
