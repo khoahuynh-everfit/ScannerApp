@@ -10,20 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c6313ee2-8a96-47eb-b699-e696f6f1ffea" name="Changes" comment="git ignore commit">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/everfitscannerapp/ui/views/home/MainActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/everfitscannerapp/MainActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/everfitscannerapp/MainViewModel.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/everfitscannerapp/data/api/ScanServiceAPI.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/everfitscannerapp/data/api/ScanServiceAPI.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/everfitscannerapp/data/repository/ScanRepositoryImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/everfitscannerapp/data/repository/ScanRepositoryImpl.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/everfitscannerapp/data/responses/ScanServiceResponse.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/everfitscannerapp/data/responses/ScanServiceResponse.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/everfitscannerapp/di/NetworkModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/everfitscannerapp/di/NetworkModule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/everfitscannerapp/domain/model/ScanService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/everfitscannerapp/domain/model/ScanService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/everfitscannerapp/domain/repository/ScanRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/everfitscannerapp/domain/repository/ScanRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/everfitscannerapp/domain/usecase/GetScanDetailInfoUseCase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/everfitscannerapp/domain/usecase/GetScanDetailInfoUseCase.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/everfitscannerapp/ui/views/result/adapter/ResultAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/everfitscannerapp/ui/views/result/adapter/ResultAdapter.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,17 +72,17 @@
     "RunOnceActivity.cidr.known.project.marker": "true",
     "SHOW_ALL_PROCESSES": "false",
     "cidr.known.project.marker": "true",
-    "last_directory_selection": "/Users/duckky/Documents/project/everfit/android/ScannerApp/app/src/main/res/drawable",
-    "last_opened_file_path": "/Users/duckky/Documents/project/everfit/android/ScannerApp/app/src/main/java/com/example/everfitscannerapp/ui/views/detail"
+    "last_directory_selection": "/Users/duckky/Documents/project/everfit/android/ScannerApp/app/src/main/res/mipmap-hdpi",
+    "last_opened_file_path": "/Users/duckky/Documents/project/everfit/android/ScannerApp/app/src/main/res/mipmap-hdpi"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi" />
       <recent name="$PROJECT_DIR$/app/src/main/java/com/example/everfitscannerapp/ui/views/detail" />
       <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
       <recent name="$PROJECT_DIR$/app/src/main/java/com/example/everfitscannerapp/ui/views/result" />
       <recent name="$PROJECT_DIR$/app/src/main/java/com/example/everfitscannerapp/navigation" />
-      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/src/main/java/com/example/everfitscannerapp/navigation" />

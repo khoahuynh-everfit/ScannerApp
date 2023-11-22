@@ -29,7 +29,7 @@ class ResultAdapter(private val onItemClick: (ResultModel) -> Unit) :
                 0 -> "$results results"
                 1 -> "$results result. Click to view details"
                 else -> "$results results. Click to view details"
-            }`
+            }
             binding.txtNumberOfResult.text = text
             binding.llDetail.setOnClickListener {
                 if (results > 0) {
